@@ -3,70 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Joygosh 超级导航</title>
+  <title>Joygosh 导航</title>
   <style>
-    body {font-family: Arial, sans-serif; background: #f4f6f9; margin: 0; padding: 0;}
-    header {background: #2c3e50; color: white; text-align: center; padding: 20px;}
-    h1 {margin: 0; font-size: 2em; }
-    .container {display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 30px;}
-    .card {background: white; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); padding: 20px; text-align: center; transition: 0.3s;}
-    .card:hover {transform: translateY(-5px); box-shadow: 0 8px 12px rgba(0,0,0,0.15);}
-    .card a {text-decoration: none; color: #2c3e50; font-weight: bold; font-size: 1.1em; display: block; margin-top: 10px;}
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f5f7fa; color:#333; }
+    header { background:#2c3e50; color:#fff; padding:20px; text-align:center; }
+    h1 { margin:0; font-size:26px; }
+    h2 { margin:20px 0 10px; font-size:20px; border-left:5px solid #3498db; padding-left:10px; }
+    .container { width:92%; max-width:1200px; margin:0 auto; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:15px; }
+    .card { background:#fff; padding:15px; text-align:center; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.1); transition:.2s; }
+    .card:hover { transform:translateY(-5px); box-shadow:0 6px 14px rgba(0,0,0,0.2); }
+    .card a { text-decoration:none; color:#333; font-weight:bold; display:block; }
   </style>
 </head>
 <body>
   <header>
-    <h1>🚀 Joygosh 超级导航</h1>
-    <p>一个网页，集合你常用的 SaaS & 工具</p>
+    <h1>Joygosh 实用导航</h1>
+    <p>一个页面，集合常用的 SaaS、金融、电商与实用工具</p>
   </header>
+
   <div class="container">
-    <div class="card">
-      <img src="https://www.google.com/favicon.ico" alt="Google">
-      <a href="https://www.google.com" target="_blank">Google 搜索</a>
+    <h2> 搜索引擎</h2>
+    <div class="grid">
+      <div class="card"><a href="https://www.google.com" target="_blank">Google</a></div>
+      <div class="card"><a href="https://www.bing.com" target="_blank">Bing</a></div>
+      <div class="card"><a href="https://www.baidu.com" target="_blank">百度</a></div>
     </div>
-    <div class="card">
-      <img src="https://mail.qq.com/favicon.ico" alt="QQ 邮箱">
-      <a href="https://mail.qq.com" target="_blank">QQ 邮箱</a>
+
+    <h2> 邮箱服务</h2>
+    <div class="grid">
+      <div class="card"><a href="https://mail.qq.com" target="_blank">QQ 邮箱</a></div>
+      <div class="card"><a href="https://mail.163.com" target="_blank">163 邮箱</a></div>
+      <div class="card"><a href="https://outlook.com" target="_blank">Outlook</a></div>
+      <div class="card"><a href="https://mail.google.com" target="_blank">Gmail</a></div>
     </div>
-    <div class="card">
-      <img src="https://mail.163.com/favicon.ico" alt="163 邮箱">
-      <a href="https://mail.163.com" target="_blank">163 邮箱</a>
+
+    <h2> SaaS & 开发工具</h2>
+    <div class="grid">
+      <div class="card"><a href="https://github.com" target="_blank">GitHub</a></div>
+      <div class="card"><a href="https://vercel.com" target="_blank">Vercel</a></div>
+      <div class="card"><a href="https://notion.so" target="_blank">Notion</a></div>
+      <div class="card"><a href="https://synccore-cloud.com" target="_blank">汇芯云 SaaS 平台</a></div>
     </div>
-    <div class="card">
-      <img src="https://github.githubassets.com/favicons/favicon.png" alt="GitHub">
-      <a href="https://github.com" target="_blank">GitHub</a>
+
+    <h2> 社交媒体</h2>
+    <div class="grid">
+      <div class="card"><a href="https://www.facebook.com" target="_blank">Facebook</a></div>
+      <div class="card"><a href="https://twitter.com" target="_blank">Twitter</a></div>
+      <div class="card"><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></div>
+      <div class="card"><a href="https://www.zhihu.com" target="_blank">知乎</a></div>
+      <div class="card"><a href="https://www.xiaohongshu.com" target="_blank">小红书</a></div>
     </div>
-    <div class="card">
-      <img src="https://static.xx.fbcdn.net/rsrc.php/yD/r/d4ZIVX-5C-b.ico" alt="Facebook">
-      <a href="https://facebook.com" target="_blank">Facebook</a>
+
+    <h2> 支付 & 银行</h2>
+    <div class="grid">
+      <div class="card"><a href="https://www.alipay.com" target="_blank">支付宝</a></div>
+      <div class="card"><a href="https://www.icbc.com.cn" target="_blank">工商银行</a></div>
+      <div class="card"><a href="https://www.cmbchina.com" target="_blank">招商银行</a></div>
+      <div class="card"><a href="https://www.hsbc.com" target="_blank">汇丰银行</a></div>
     </div>
-    <div class="card">
-      <img src="https://static.licdn.com/scds/common/u/images/logos/favicons/v1/favicon.ico" alt="LinkedIn">
-      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+
+    <h2> 电商 & 创业工具</h2>
+    <div class="grid">
+      <div class="card"><a href="https://shopee.cn" target="_blank">Shopee</a></div>
+      <div class="card"><a href="https://www.1688.com" target="_blank">1688</a></div>
+      <div class="card"><a href="https://pingpongx.com" target="_blank">PingPong</a></div>
+      <div class="card"><a href="https://www.shopify.com" target="_blank">Shopify</a></div>
     </div>
-    <div class="card">
-      <img src="https://abs.twimg.com/favicons/twitter.ico" alt="Twitter">
-      <a href="https://twitter.com" target="_blank">Twitter</a>
+
+    <h2>📈 理财 & 金融</h2>
+    <div class="grid">
+      <div class="card"><a href="https://www.etoro.com" target="_blank">eToro 投资</a></div>
+      <div class="card"><a href="https://www.futu5.com" target="_blank">富途牛牛</a></div>
+      <div class="card"><a href="https://www.ibkr.com" target="_blank">IBKR 盈透证券</a></div>
+      <div class="card"><a href="https://www.tradingview.com" target="_blank">TradingView</a></div>
     </div>
-    <div class="card">
-      <img src="https://static.zhihu.com/heifetz/favicon.ico" alt="知乎">
-      <a href="https://www.zhihu.com" target="_blank">知乎</a>
+
+    <h2> 实用工具</h2>
+    <div class="grid">
+      <div class="card"><a href="https://translate.google.com" target="_blank">Google 翻译</a></div>
+      <div class="card"><a href="https://www.remove.bg" target="_blank">Remove BG</a></div>
+      <div class="card"><a href="https://canva.com" target="_blank">Canva 设计</a></div>
+      <div class="card"><a href="https://chat.openai.com" target="_blank">ChatGPT</a></div>
     </div>
-    <div class="card">
-      <img src="https://www.xiaohongshu.com/favicon.ico" alt="小红书">
-      <a href="https://www.xiaohongshu.com" target="_blank">小红书</a>
-    </div>
-    <div class="card">
-      <img src="https://www.icbc.com.cn/favicon.ico" alt="工商银行">
-      <a href="https://www.icbc.com.cn" target="_blank">工商银行</a>
-    </div>
-    <div class="card">
-      <img src="https://www.alipay.com/favicon.ico" alt="支付宝">
-      <a href="https://www.alipay.com" target="_blank">支付宝</a>
-    </div>
-    <div class="card">
-      <img src="https://synccore-cloud.com/favicon.ico" alt="汇芯云">
-      <a href="https://www.synccore-cloud.com" target="_blank">汇芯云 SaaS 平台</a>
+
+    <h2> 新闻资讯</h2>
+    <div class="grid">
+      <div class="card"><a href="https://www.cnn.com" target="_blank">CNN</a></div>
+      <div class="card"><a href="https://www.bbc.com" target="_blank">BBC</a></div>
+      <div class="card"><a href="https://news.sina.com.cn" target="_blank">新浪新闻</a></div>
+      <div class="card"><a href="https://36kr.com" target="_blank">36氪</a></div>
     </div>
   </div>
 </body>
